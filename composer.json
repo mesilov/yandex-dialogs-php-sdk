@@ -1,0 +1,40 @@
+{
+    "name": "mesilov/yandex-dialogs-php-sdk",
+    "description": "Yandex dialogs API PHP-wrapper",
+    "keywords": [
+        "Yandex",
+        "PHP",
+        "Dialogs",
+        "API"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/mesilov/yandex-dialogs-php-sdk",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maxim Mesilov",
+            "homepage": "https://github.com/mesilov/"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "jakub-onderka/php-parallel-lint": "0.9",
+        "jakub-onderka/php-console-highlighter": "~0.3",
+        "phpunit/phpunit": "~4.8",
+        "phpunit/phpunit-mock-objects": "2.3.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "scripts": {
+        "test": [
+            "parallel-lint . --exclude vendor --no-colors",
+            "phpunit --colors=always --verbose"
+        ]
+    }
+}
