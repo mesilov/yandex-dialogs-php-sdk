@@ -33,8 +33,8 @@ class Formatter
             'response' => [
                 'text' => $response->getText(),
                 'tts' => $response->getTts(),
+                'buttons' => $buttons,
             ],
-            'buttons' => $buttons,
             'end_session' => $response->isEndSession(),
             'session' => [
                 'session_id' => $response->getSession()->getSessionId(),
